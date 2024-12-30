@@ -10,6 +10,9 @@ A web application that calculates the total duration of YouTube playlists with a
 ![Duration Calculation](images/duration-calculation.png)
 *Example of duration calculation with different playback speeds*
 
+![Playlist Details](images/playlist-details.png)
+*Detailed view of playlist videos with individual durations*
+
 ## Features
 
 - Calculate total playlist duration instantly
