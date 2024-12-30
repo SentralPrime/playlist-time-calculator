@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="İbrahim Ünal (Prime)">
+    <meta name="description" content="A tool to calculate the total duration of YouTube playlists">
+    <meta name="keywords" content="YouTube, playlist, duration, calculator, time">
+    <title>Playlist Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content-wrapper">
+            <!-- Left side - calculator section -->
+            <section id="hero">
+                <h1>Playlist Time Calculator</h1>
+                <p>Calculate the total duration of any YouTube playlist!</p>
+                
+                <div class="calculator-container">
+                    <div class="input-group">
+                        <input type="text" id="playlistUrl" placeholder="Paste YouTube Playlist URL" class="playlist-input">
+                        <button id="actionButton" class="action-button">Calculate</button>
+                    </div>
+                    
+                    <div id="result" class="result-container hidden">
+                        <div class="result-header">Playlist Duration</div>
+                        <div class="time-details">
+                            <div class="time-box">
+                                <span id="hours">0</span>
+                                <label>Hours</label>
+                            </div>
+                            <div class="time-box">
+                                <span id="minutes">0</span>
+                                <label>Minutes</label>
+                            </div>
+                            <div class="time-box">
+                                <span id="seconds">0</span>
+                                <label>Seconds</label>
+                            </div>
+                        </div>
+                        <div class="video-count">
+                            Total <span id="videoCount">0</span> videos
+                        </div>
+                        
+                        <div class="button-group">
+                            <button id="showSpeedsButton" class="action-button">Show Playback Speed Durations</button>
+                            <button id="showVideosButton" class="action-button">Show Playlist Videos</button>
+                        </div>
+                        
+                        <div class="playback-speeds hidden" id="playbackSpeedsContainer">
+                            <div class="speeds-header">Playback Speed Durations:</div>
+                            <div class="speeds-grid">
+                                <div class="speed-box">
+                                    <span class="speed-label">0.25x</span>
+                                    <span id="speed025" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">0.5x</span>
+                                    <span id="speed050" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">0.75x</span>
+                                    <span id="speed075" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">1x</span>
+                                    <span id="speed100" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">1.25x</span>
+                                    <span id="speed125" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">1.5x</span>
+                                    <span id="speed150" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">1.75x</span>
+                                    <span id="speed175" class="speed-time">--:--:--</span>
+                                </div>
+                                <div class="speed-box">
+                                    <span class="speed-label">2x</span>
+                                    <span id="speed200" class="speed-time">--:--:--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="loading" class="loading-container hidden">
+                        <div class="loader"></div>
+                        <p>Calculating playlist duration...</p>
+                    </div>
+
+                    <div id="error" class="error-container hidden">
+                        <p>Error! Please enter a valid YouTube playlist URL.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right side - video list -->
+            <section id="playlist-videos" class="playlist-sidebar hidden">
+                <h2>Playlist Videos</h2>
+                <div class="videos-container">
+                    <div id="videosList" class="videos-list">
+                        <!-- Videos will be added here with JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Playlist Time Calculator. Created by <a href="https://www.instagram.com/ibrahimunalprime/" target="_blank">İbrahim Ünal (Prime)</a>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
