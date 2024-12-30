@@ -2,17 +2,28 @@
 
 A web application that calculates the total duration of YouTube playlists with additional playback speed calculations.
 
+## Screenshots
+
+![Main Interface](images/main-interface.png)
+*Main interface of the application*
+
+![Duration Calculation](images/duration-calculation.png)
+*Example of duration calculation with different playback speeds*
+
 ## Features
 
-- Calculate total playlist duration
-- View durations at different playback speeds (0.25x to 2x)
-- List all videos in the playlist
-- Responsive design
-- User-friendly interface
+- Calculate total playlist duration instantly
+- View durations with different playback speeds (0.25x to 2x)
+- List all videos in the playlist with their individual durations
+- Clean and responsive design for all devices
+- User-friendly interface with real-time calculations
 
 ## Installation
 
-1. Clone the project
+1. Clone the repository:
+```bash
+git clone https://github.com/SentralPrime/playlist-time-calculator.git
+```
 2. Get your YouTube Data API key from Google Cloud Console:
    - Go to https://console.cloud.google.com/apis/credentials
    - Create a new project or select an existing one
@@ -23,23 +34,29 @@ A web application that calculates the total duration of YouTube playlists with a
 
 ## Usage
 
-- Enter YouTube playlist URL
-- Get instant duration calculation
-- View different playback speed durations
-- Browse through playlist videos
+1. Enter a YouTube playlist URL in the input field
+2. Click "Calculate" or press Enter
+3. View the total duration and different playback speed calculations
+4. Browse through the complete list of playlist videos
 
 ## Technologies
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6+)
 - YouTube Data API v3
+- Responsive Design
 
 ## Author
 
-- **İbrahim Ünal (Prime)**
+- **Ibrahim Unal (Prime)**
 - Instagram: [@ibrahimunalprime](https://www.instagram.com/ibrahimunalprime/)
+- GitHub: [SentralPrime](https://github.com/SentralPrime)
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/SentralPrime/playlist-time-calculator/issues). 
